@@ -12,14 +12,14 @@ header, footer {
   align-items: center;
   padding: 15px 50px;
   background: rgba(0, 0, 50, 0.6);
-  border-bottom: 2px solid blue;
-  box-shadow: 0 2px 15px rgba(0, 100, 255, 0.6);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  box-shadow: 0 2px 15px rgba(255, 0, 0, 0.6);
 }
 
 header .logo, footer .logo {
   font-size: 28px;
   font-weight: bold;
-  color: cyan;
+  color: rgb(255, 0, 0);
 }
 
 nav ul {
@@ -39,15 +39,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 10px blue, 0 0 20px cyan;
-  background: rgba(0, 255, 0, 0.3);
+  
+  box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0);
+  background: rgba(18, 19, 18, 0.3);
+transform: matrix(1, 0, 0, 1, 100, 50);
+}
+.wrapper {
+  background: url("./images/warpper.png") no-repeat center center/cover;
+  color: white;  
+  text-align: center;
+  padding: 100px 20px; 
 }
 
 .buy-btn {
   background: transparent;
-  border: 2px solid blue;
-  color: cyan;
+  border: 2px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
@@ -55,9 +62,9 @@ nav ul li a:hover {
 }
 
 .buy-btn:hover {
-  background: blue;
+  background: rgb(255, 0, 0);
   color: #fff;
-  box-shadow: 0 0 10px cyan;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
 
@@ -101,12 +108,12 @@ nav ul li a:hover {
 .card h3 {
   margin: 15px 0 10px;
   font-size: 22px;
-  color: cyan;
+  color: rgb(255, 0, 0);
 }
 
 .price {
   font-weight: bold;
-  color: lightgreen;
+  color: rgb(26, 149, 1);
 }
 
 .discount {
@@ -116,12 +123,12 @@ nav ul li a:hover {
 
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px cyan;
+  box-shadow: 0 0 15px rgb(255, 81, 0);
 }
 
 /* Footer */
 footer {
-  border-top: 2px solid blue;
+  border-top: 2px solid rgb(255, 0, 0);
   flex-direction: column;
   text-align: center;
 }
